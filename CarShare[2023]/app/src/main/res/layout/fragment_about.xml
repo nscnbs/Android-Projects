@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.AboutFragment">
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Car Drive | Car Rent"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageAppLogo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageAppLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imageAppLogo" />
+
+    <ImageView
+        android:id="@+id/imageAppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAppDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi enim nunc faucibus a pellentesque. Dolor morbi non arcu risus. Lectus nulla at volutpat diam. Hendrerit gravida rutrum quisque non tellus. Enim diam vulputate ut pharetra sit amet aliquam id. Interdum varius sit amet mattis. Quis viverra nibh cras pulvinar mattis nunc sed blandit. At tempor commodo ullamcorper a lacus. Nunc id cursus metus aliquam. Tortor condimentum lacinia quis vel eros donec. Et egestas quis ipsum suspendisse ultrices gravida. In vitae turpis massa sed elementum tempus egestas sed. Accumsan in nisl nisi scelerisque eu. Quis vel eros donec ac odio tempor.
+        \n Ullamcorper a lacus vestibulum sed arcu. Ante metus dictum at tempor commodo ullamcorper a lacus. Dui sapien eget mi proin sed libero enim sed. Sem et tortor consequat id porta nibh venenatis cras. Platea dictumst vestibulum rhoncus est pellentesque. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Tristique magna sit amet purus. Id cursus metus aliquam eleifend mi. Id diam vel quam elementum pulvinar etiam non. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Porta lorem mollis aliquam ut porttitor."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAppName" />
+
+    <TextView
+        android:id="@+id/textAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAppDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

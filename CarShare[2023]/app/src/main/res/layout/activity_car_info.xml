@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarInfoActivity">
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="4,9"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRating" />
+
+    <ImageView
+        android:id="@+id/imageRating"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toBottomOf="@+id/textClassCar"
+        app:layout_constraintEnd_toStartOf="@+id/textRating"
+        app:layout_constraintTop_toTopOf="@+id/textNameCar" />
+
+
+    <TextView
+        android:id="@+id/textNameCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ford Fiesta"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textClassCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Small (B)"
+        android:textAlignment="center"
+        android:textColor="#A7A7A7"
+        app:layout_constraintEnd_toEndOf="@+id/textNameCar"
+        app:layout_constraintStart_toStartOf="@+id/textNameCar"
+        app:layout_constraintTop_toBottomOf="@+id/textNameCar" />
+
+    <ImageView
+        android:id="@+id/imageCar"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ford"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textClassCar"
+        app:srcCompat="@drawable/ford"
+        tools:srcCompat="@drawable/ford" />
+
+    <ImageView
+        android:id="@+id/imageNumberOfPersons"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toStartOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCar" />
+
+    <TextView
+        android:id="@+id/textNumberOfPersons"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="х4"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageNumberOfPersons"
+        app:layout_constraintStart_toStartOf="@+id/imageNumberOfPersons"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumberOfPersons" />
+
+    <ImageView
+        android:id="@+id/imageGearbox"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/transmission"
+        app:layout_constraintEnd_toEndOf="@+id/textGearbox"
+        app:layout_constraintStart_toStartOf="@+id/textGearbox"
+        app:layout_constraintTop_toBottomOf="@+id/imageCar" />
+
+    <TextView
+        android:id="@+id/textGearbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Mechanical"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toEndOf="@+id/divider6"
+        app:layout_constraintTop_toBottomOf="@+id/imageGearbox" />
+
+    <ImageView
+        android:id="@+id/imageFuelTank"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/fuel"
+        app:layout_constraintEnd_toEndOf="@+id/textFuelTank"
+        app:layout_constraintStart_toStartOf="@+id/textFuelTank"
+        app:layout_constraintTop_toBottomOf="@+id/imageCar" />
+
+    <TextView
+        android:id="@+id/textFuelTank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Full/Full"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider7"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/imageFuelTank" />
+
+    <ImageView
+        android:id="@+id/imageNumberOfBags"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/suitcase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider7"
+        app:layout_constraintTop_toBottomOf="@+id/imageCar" />
+
+    <TextView
+        android:id="@+id/textNumberOfBags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="х2"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageNumberOfBags"
+        app:layout_constraintStart_toStartOf="@+id/imageNumberOfBags"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumberOfBags" />
+
+    <ImageView
+        android:id="@+id/imageCarAddress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGearbox" />
+
+    <TextView
+        android:id="@+id/textCarAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="200 Let Krivoy Rog Ave., 36a"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCarAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCarAddress"
+        app:layout_constraintTop_toTopOf="@+id/imageCarAddress" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="#F1F1F1"
+        android:backgroundTint="#F1F1F1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCarAddress" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F1F1F1"
+        android:backgroundTint="#F1F1F1"
+        app:layout_constraintBottom_toTopOf="@+id/textCostPerDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textCostPerDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="110 PLN /day"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonAddToFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/heart"
+        app:backgroundTint="#F1F1F1"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:useCompatPadding="false" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/share"
+        app:backgroundTint="#F1F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="beginTransaction"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAddToFavorite"
+        app:layout_constraintEnd_toStartOf="@+id/buttonShare"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddToFavorite"
+        app:layout_constraintTop_toTopOf="@+id/buttonAddToFavorite" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="153dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textCarDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi enim nunc faucibus a pellentesque. Dolor morbi non arcu risus. Lectus nulla at volutpat diam. Hendrerit gravida rutrum quisque non tellus. Enim diam vulputate ut pharetra sit amet aliquam id. Interdum varius sit amet mattis. Quis viverra nibh cras pulvinar mattis nunc sed blandit. At tempor commodo ullamcorper a lacus. Nunc id cursus metus aliquam. Tortor condimentum lacinia quis vel eros donec. Et egestas quis ipsum suspendisse ultrices gravida. In vitae turpis massa sed elementum tempus egestas sed. Accumsan in nisl nisi scelerisque eu. Quis vel eros donec ac odio tempor."
+                app:layout_constraintBottom_toTopOf="@+id/divider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textFuelTank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFuelTank" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textFuelTank"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFuelTank" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textFuelTank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toTopOf="@+id/imageFuelTank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

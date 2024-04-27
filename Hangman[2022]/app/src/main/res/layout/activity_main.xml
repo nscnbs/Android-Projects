@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context=".MainActivity"
+        android:columnCount="9"
+        android:id="@+id/grid"
+        android:padding="10dp"
+        >
+    <ImageView
+            android:id="@+id/gallowsView"
+            android:layout_width="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/stage_1"
+            android:layout_columnSpan="9"
+    />
+    <TextView
+        android:id="@+id/wordView"
+        android:letterSpacing="0.1"
+        android:layout_width="match_parent"
+        android:layout_rowWeight="1"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_columnSpan="9"
+    />
+
+</GridLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.carshare.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_bookings"
+        android:name="com.example.carshare.ui.bookings.BookingsFragment"
+        android:label="My Bookings"
+        tools:layout="@layout/fragment_bookings" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.carshare.ui.profile.ProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.example.carshare.ui.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite"/>
+    <fragment
+        android:id="@+id/nav_myCars"
+        android:name="com.example.carshare.ui.myCars.MyCarsFragment"
+        android:label="My Cars"
+        tools:layout="@layout/fragment_my_cars" />
+    <activity
+        android:id="@+id/carInfo"
+        android:name="com.example.carshare.CarInfoActivity"
+        android:label="activity_car_info"
+        tools:layout="@layout/activity_car_info" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.carshare.ui.about.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="com.example.carshare.ui.orders.OrdersFragment"
+        android:label="My orders"
+        tools:layout="@layout/fragment_orders" />
+
+</navigation>

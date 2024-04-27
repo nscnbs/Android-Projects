@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/search"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/space1"
+            android:enabled="false"
+            android:title="" />
+
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/heart"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/nav_bookings"
+            android:icon="@drawable/label"
+            android:title="My bookings" />
+        <item
+            android:id="@+id/nav_myCars"
+            android:icon="@drawable/car"
+            android:title="My cars" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/orders"
+            android:title="My orders" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="My profile" />
+
+        <item
+            android:id="@+id/space2"
+            android:enabled="false"
+            android:title="" />
+
+        <item
+            android:id="@+id/carInfo"
+            android:icon="@drawable/faq"
+            android:title="Contacts and support" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="About"
+            android:visible="true" />
+
+</group>
+
+</menu>

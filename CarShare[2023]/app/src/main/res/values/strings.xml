@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">CarShare</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="model">Model</string>
+    <string name="make">Make</string>
+    <string name="year_of_production">Year of production</string>
+    <string name="number_of_bags">Number of Bags</string>
+    <string name="number_of_people">Number of People</string>
+    <string name="current_fuel_range_in_km">Current fuel range (in km)</string>
+    <string name="pick_start_date">pick start date</string>
+    <string name="pick_end_date">pick end date</string>
+
+    <array name="carClass">
+        <item>Mini (A)</item>
+        <item>Small (B)</item>
+        <item>Medium (C)</item>
+        <item>Large (D)</item>
+        <item>Executive (E)</item>
+        <item>Luxury (F)</item>
+        <item>Sport (S)</item>
+        <item>Multi-purpose (M)</item>
+        <item>SUV (J)</item>
+    </array>
+
+    <array name="carGearbox">
+        <item>Manual</item>
+        <item>Automatic</item>
+        <item>Dual-Clutch</item>
+        <item>Variable (stepless)</item>
+    </array>
+
+    <array name="carFuelTank">
+        <item>Full/Full</item>
+        <item>Empty/Empty</item>
+        <item>Full/Empty</item>
+        <item>Empty/Full</item>
+    </array>
+
+    <array name="carAvailability">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+</resources>

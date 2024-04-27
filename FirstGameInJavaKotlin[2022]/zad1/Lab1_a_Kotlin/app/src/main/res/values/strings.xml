@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1Kotlin</string>
+    <string name="podaj">Podaj która liczba\n jest większa?</string>
+    <string name="punkty">Punkty</string>
+    <string name="super_gra">Super GRA</string>
+    <string name="button_left">Button</string>
+    <string name="button_right">Button</string>
+</resources>

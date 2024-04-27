@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1bKotlin</string>
+    <string name="name_game">Zgadywanie Liczby</string>
+    <string name="podaj">Zgadnij liczbę od 1 do 100</string>
+    <string name="punkty">Punkty: 0</string>
+    <string name="button">OK</string>
+    <string name="liczba_prob">Liczba prob: 0</string>
+    <string name="podaj_liczb">Podaj liczbę</string>
+</resources>
